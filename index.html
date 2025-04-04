@@ -1,20 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert Title Here</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hello Fitness Wireframe</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Set background color to black */
+            color: white; /* Set text color to white */
+        }
+
+        /* Header Section with left to right gradient */
+        header {
+            background: linear-gradient(to right, #ADD8E6, #0000F0); /* Gradient goes from light blue to dark blue from left to right */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        /* Navbar */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #333;
+            margin: 0 20px;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ccc;
+        }
+
+        /* Main Content Section with light to dark green gradient */
+        main {
+            padding: 100px 40px;
+            margin-top: 40px;
+            border: 2px dashed #333;
+            border-radius: 15px;
+            background: linear-gradient(to right, #90EE90, #006400); /* Gradient from light green to dark green */
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center; /* Center content */
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons with actions */
+        .button {
+            background-color: #e0e0e0;
+            color: #333;
+            border: 2px solid #333;
+            padding: 15px 30px;
+            font-size: 16px;
+            margin: 15px 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #ccc;
+        }
+
+        /* Placeholder Section Styling - Gradient Red Background */
+        section {
+            padding: 60px 40px;
+            margin-top: 40px;
+            border: 2px dashed #333;
+            border-radius: 10px;
+            background: linear-gradient(to right, #FF7F7F, #B22222); /* Gradient from light red to dark red */
+        }
+
+        footer {
+            background-color: #e0e0e0;
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 2px solid #333;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Style for images */
+        .welcome-img {
+            width: 100%;
+            max-width: 600px; /* Limit the size */
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        /* Style for Contact Us input fields */
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        /* Style for labels */
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Style for Submit Button - Change to Red */
+        .submit-btn {
+            background-color: #FF0000; /* Red color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #B22222; /* Dark red when hovered */
+        }
+
+        /* Style for confirmation message after submission */
+        .confirmation-message {
+            color: #28a745; /* Green color for confirmation message */
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Why I love Fish Fingers</h1>
+        <h1>Hello Fitness</h1>
+        <nav>
+            <a href="#welcome">Welcome</a>
+            <a href="#learn-more">Learn More</a>
+            <a href="#contact-us">Contact Us</a>
+            <a href="#diet-plan">Diet Plan</a>
+        </nav>
     </header>
-    <main>
-        <p>Insert Introduction Here</p>
+
+    <!-- Main Content Section -->
+    <main id="welcome">
+        <h2>Welcome to Hello Fitness!</h2>
+        <p>Welcome to Hello Fitness, your one-stop destination for achieving a healthier and happier lifestyle. Our holistic approach combines physical fitness, mental wellness, and balanced nutrition to help you reach your full potential. Join us today and start your journey towards a better, stronger you!</p>
+        
+        <!-- Image Example -->
+        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?cs=srgb&dl=pexels-willpicturethis-1954524.jpg&fm=jpg" alt="Fitness Example" class="welcome-img">
     </main>
+
+    <!-- Learn More Section -->
+    <section id="learn-more">
+        <h2>Learn More</h2>
+        <p>At Hello Fitness, we offer a comprehensive fitness program designed to meet your specific health and wellness goals. Whether you're looking to lose weight, increase strength, or improve flexibility, our expert trainers will guide you every step of the way. We focus on a balanced approach that combines effective exercise routines, proper nutrition, and mental well-being strategies to help you achieve lasting results. Our program is suitable for all fitness levels, so no matter where you start, we’re here to support your journey toward a healthier, happier lifestyle.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        
+        <!-- Contact Form -->
+        <form action="mailto:hellofitness@gmail.com" method="post" enctype="text/plain">
+            <!-- Name input field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email input field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Message textarea field -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+
+            <!-- Send Message Button -->
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Diet Plan Section -->
+    <section id="diet-plan">
+        <h2>Diet Plan</h2>
+        <p>Breakfast: Scrambled eggs with spinach and whole-grain toast<br>
+        Lunch: Grilled chicken (or tofu) with quinoa and roasted veggies<br>
+        Dinner: Baked salmon (or lentils) with sweet potato and steamed broccoli</p>
+
+        <!-- Add your image under the Diet Plan -->
+        <img src="https://media.istockphoto.com/id/1160789077/photo/nutritionist-giving-consultation-to-patient-with-healthy-fruit-and-vegetable-right-nutrition.jpg?s=612x612&w=0&k=20&c=t5LNRmwc-BKcV-jmOGiCZXo5DWjBZKMe0OumH4WdW7I=" alt="Healthy Diet Plan" class="welcome-img">
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>Start Footer Here</p>
+        <p> Pls do not copy right All Rights Reserved from the national government of asia hehehehe.</p>
+        <p>Email: <a href="mailto:hellofitness@gmail.com">hellofitness@gmail.com</a></p>
     </footer>
+
 </body>
-</html>
